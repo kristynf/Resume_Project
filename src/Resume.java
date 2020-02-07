@@ -134,6 +134,7 @@ public class Resume {
         return skillProficiency;
     }
 
+
     public void setSkillProficiency(String skillProficiency) {
         this.skillProficiency = skillProficiency;
     }
