@@ -27,6 +27,7 @@ public class Resume {
     public Resume() {
 
     }
+    Skills s = new Skills();
 
 
     /*public void addSkills(Skills skill){
@@ -142,9 +143,9 @@ public class Resume {
     public void welcome() {
         System.out.println("-------Welcome to Kristyn's Resume Generator-------");
         System.out.println("Enter your information as prompted and a spiffy new resume will be generated");
-
+    }
 //code to display the resume (hope it works!)
-        public String getDisplayResume() {
+        public String getDisplayResume(String name){
             return "++--++--++--++--++--++--++--++--++--++--++--++--++--++--++--++"
                     + getName() + "\n"
                     + getEmailAddress() + "\n " +
@@ -162,13 +163,14 @@ public class Resume {
                     + getCompany() + ", " + getStartDate() + " - " + getEndDate() + "\n"
                     + "       " + getDescription() + "\n"
                     + "SKILLS" + "\n"
-               /* + getSkillName() + ", " + getSkillProficiency() + "\n"
-                + getSkillName() + ", " + getSkillProficiency() + "\n"
-                + getSkillName() + ", " + getSkillProficiency() + "\n";*/
+                + s.getSkillName() + ", " + s.getSkillProficiency() + "\n";
+                /*+ s.getSkillName() + ", " + s.getSkillProficiency() + "\n"
+                + s.getSkillName() + ", " + s.getSkillProficiency() + "\n"*/
 
 
-        }
+
 
     }
+    }
 
-}
+
