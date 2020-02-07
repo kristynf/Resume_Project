@@ -52,6 +52,8 @@ public class Main {
 
         System.out.println("Please enter your name to retrieve your spiffy resume: ");
              String input = sc.nextLine();
+             b.resumeReturn(input);
+
 
 
 

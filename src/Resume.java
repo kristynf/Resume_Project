@@ -163,10 +163,11 @@ public class Resume {
 
     }
 //code to display the resume (hope it works!)
-        public String getDisplayResume(String name){
+        public String getDisplayResume(String input){
 
 
             return "++--++--++--++--++--++--++--++--++--++--++--++--++--++--++--++"
+                    +"\n"
                     + getName() + "\n"
                     + getEmailAddress() + "\n " +
                     "\n" +
