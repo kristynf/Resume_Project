@@ -196,7 +196,14 @@ public class Resume {
                     + "SKILLS" + "\n"
 
                        + getSkills().get(0).getSkillName()+ " , "
-                        + getSkills().get(0).getSkillProficiency();
+                        + getSkills().get(0).getSkillProficiency() +
+                    "\n"
+                    + getSkills().get(1).getSkillName()+ " , "
+                    + getSkills().get(1).getSkillProficiency() +
+                    "\n"
+                    + getSkills().get(2).getSkillName()+ " , "
+                    + getSkills().get(2).getSkillProficiency();
+
             }
 
 
