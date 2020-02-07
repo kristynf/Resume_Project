@@ -6,10 +6,11 @@ public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         Resume b = new Resume();
-        Skills s = new Skills();
+        /*Skills s = new Skills();
         Skills s2 = new Skills();
-        Skills s3 = new Skills();
-        ArrayList<Skills>skills;
+        Skills s3 = new Skills();*/
+
+        ArrayList e= new ArrayList();
 
         b.welcome();
 
@@ -39,9 +40,13 @@ public class Main {
         for (int i = 0; i < 3; i++) {
             if (i < 3) {
                 System.out.println("Enter your skill: ");
-                s.setSkillName(sc.nextLine());
+                Skills skills = new Skills();
+                skills.setSkillName(myName);
+                Resume.addSkill(skills);
                 System.out.println("Enter your proficiency at your skill: ");
-                s.setSkillProficiency(sc.nextLine());
+                Skills skills1 = new Skills();
+                skills.setSkillProficiency(myProficiency);
+                Resume.addSkill(skills1);
 
             } else {
                 break;

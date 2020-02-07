@@ -13,7 +13,7 @@ public class Resume {
     private String endDate;
     private String description;
 
-   public ArrayList<String> skills = new ArrayList<>();
+   private ArrayList<String> skills = new ArrayList<>();
 
 
     public ArrayList<String> getSkills() {
@@ -157,7 +157,7 @@ public class Resume {
                  }
 
             else {
-            resumeReturn = "No book found";}
+            resumeReturn = "No resume found";}
 
             System.out.println(resumeReturn);
 
