@@ -13,14 +13,18 @@ public class Resume {
     private String endDate;
     private String description;
 
-   private ArrayList<String> skills = new ArrayList<>();
+   private ArrayList<Skills> skills = new ArrayList<Skills>();
 
 
-    public ArrayList<String> getSkills() {
+    public void addSkill(Skills skills){
+        this.skills.add(skills);
+    }
+
+    public ArrayList<Skills> getSkills() {
         return skills;
     }
 
-    public void setSkills(ArrayList<String> skills) {
+    public void setSkills(ArrayList<Skills> skills) {
         this.skills = skills;
     }
 

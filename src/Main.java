@@ -41,12 +41,11 @@ public class Main {
             if (i < 3) {
                 System.out.println("Enter your skill: ");
                 Skills skills = new Skills();
-                skills.setSkillName(myName);
-                Resume.addSkill(skills);
+                skills.setSkillName();
+                b.addSkill(skills);
                 System.out.println("Enter your proficiency at your skill: ");
-                Skills skills1 = new Skills();
                 skills.setSkillProficiency(myProficiency);
-                Resume.addSkill(skills1);
+                b.addSkill(skills);
 
             } else {
                 break;
