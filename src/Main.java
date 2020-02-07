@@ -6,7 +6,7 @@ public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         Resume b = new Resume();
-        ArrayList<S>
+        ArrayList<Skills>skills;
 
         b.welcome();
 
@@ -36,8 +36,8 @@ public class Main {
         for (int i = 0; i < 3; i++) {
             if (i < 3) {
                 System.out.println("Enter your skill: ");
-                b.setSkillName(sc.nextLine());
-                System.out.println("Enter your proficiency at your skill: ");
+                skills
+            System.out.println("Enter your proficiency at your skill: ");
                 b.setSkillProficiency(sc.nextLine());
 
             } else {
@@ -49,7 +49,7 @@ public class Main {
 
         System.out.println("Please enter your name to retrieve your spiffy resume: ");
              String input = sc.nextLine();
-             ResumeDB database = new ResumeDB(input);
+
 
 
 

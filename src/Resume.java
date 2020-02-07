@@ -19,7 +19,12 @@ public class Resume {
     }
     ArrayList<Skills>skills;
 
-    public Resume(String name, String emailAddress, String degreeType, String universityName, String major, int gradYear, String company,
+    /*public void addSkills(Skills skill){
+        this.skills=skills;
+    }
+    */
+
+    /*public Resume(String name, String emailAddress, String degreeType, String universityName, String major, int gradYear, String company,
                   String jobTitle, String startDate, String endDate, String description, String skillName, String skillProficiency) {
         this.name = name;
         this.emailAddress = emailAddress;
@@ -33,7 +38,7 @@ public class Resume {
         this.endDate = endDate;
         this.description = description;
 
-    }
+    }*/
 
     //getters and setters
     public String getName() {
