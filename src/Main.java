@@ -40,10 +40,12 @@ public class Main {
         for (int i = 0; i < 3; i++) {
             if (i < 3) {
                 System.out.println("Enter your skill: ");
+                String mySkills = sc.nextLine();
                 Skills skills = new Skills();
-                skills.setSkillName();
+                skills.setSkillName(mySkills);
                 b.addSkill(skills);
                 System.out.println("Enter your proficiency at your skill: ");
+                String myProficiency = sc.nextLine();
                 skills.setSkillProficiency(myProficiency);
                 b.addSkill(skills);
 
