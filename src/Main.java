@@ -1,16 +1,14 @@
-import com.sun.deploy.security.SelectableSecurityManager;
-
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Main {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        ResumeDB a = new ResumeDB();
         Resume b = new Resume();
+        ArrayList<S>
 
-
-        a.welcome();
+        b.welcome();
 
         System.out.println("What is your first and last name? ");
         b.setName(sc.nextLine());

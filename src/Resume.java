@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 public class Resume {
     private String name;
     private String emailAddress;
@@ -10,12 +12,12 @@ public class Resume {
     private String startDate;
     private String endDate;
     private String description;
-    private String skillName;
-    private String skillProficiency;
-//default constructor
+
+    //default constructor
     public Resume() {
 //overloaded constructor
     }
+    ArrayList<Skills>skills;
 
     public Resume(String name, String emailAddress, String degreeType, String universityName, String major, int gradYear, String company,
                   String jobTitle, String startDate, String endDate, String description, String skillName, String skillProficiency) {
@@ -30,10 +32,10 @@ public class Resume {
         this.startDate = startDate;
         this.endDate = endDate;
         this.description = description;
-        this.skillName = skillName;
-        this.skillProficiency = skillProficiency;
+
     }
-//getters and setters
+
+    //getters and setters
     public String getName() {
         return name;
     }
@@ -122,48 +124,36 @@ public class Resume {
         this.description = description;
     }
 
-    public String getSkillName() {
-        return skillName;
-    }
+    public void welcome() {
+        System.out.println("-------Welcome to Kristyn's Resume Generator-------");
+        System.out.println("Enter your information as prompted and a spiffy new resume will be generated");
 
-    public void setSkillName(String skillName) {
-        this.skillName = skillName;
-    }
-
-    public String getSkillProficiency() {
-        return skillProficiency;
-    }
-
-
-    public void setSkillProficiency(String skillProficiency) {
-        this.skillProficiency = skillProficiency;
-    }
 //code to display the resume (hope it works!)
-    public String getDisplayResume() {
-        return "++--++--++--++--++--++--++--++--++--++--++--++--++--++--++--++"
-                + getName() + "\n"
-                + getEmailAddress() + "\n " +
-                "\n" +
-                "EDUCATION" +
-                "\n"
-                + getDegreeType() + " in " + getMajor() +
-                "\n"
-                + getUniversityName() + ", " + getGradYear() +
-                "\n"
-                + "WORK EXPERIENCE" +
-                "\n"
-                + getJobTitle() +
-                "\n"
-                + getCompany() + ", " + getStartDate() + " - " + getEndDate() + "\n"
-                + "       " + getDescription() + "\n"
-                + "SKILLS" + "\n"
+        public String getDisplayResume() {
+            return "++--++--++--++--++--++--++--++--++--++--++--++--++--++--++--++"
+                    + getName() + "\n"
+                    + getEmailAddress() + "\n " +
+                    "\n" +
+                    "EDUCATION" +
+                    "\n"
+                    + getDegreeType() + " in " + getMajor() +
+                    "\n"
+                    + getUniversityName() + ", " + getGradYear() +
+                    "\n"
+                    + "WORK EXPERIENCE" +
+                    "\n"
+                    + getJobTitle() +
+                    "\n"
+                    + getCompany() + ", " + getStartDate() + " - " + getEndDate() + "\n"
+                    + "       " + getDescription() + "\n"
+                    + "SKILLS" + "\n"
+               /* + getSkillName() + ", " + getSkillProficiency() + "\n"
                 + getSkillName() + ", " + getSkillProficiency() + "\n"
-                + getSkillName() + ", " + getSkillProficiency() + "\n"
-                + getSkillName() + ", " + getSkillProficiency() + "\n";
+                + getSkillName() + ", " + getSkillProficiency() + "\n";*/
 
+
+        }
 
     }
 
 }
-
-
