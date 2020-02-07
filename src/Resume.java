@@ -24,9 +24,12 @@ public class Resume {
         return skills;
     }
 
+
     public void setSkills(ArrayList<Skills> skills) {
         this.skills = skills;
     }
+
+
 
     //default constructor
     public Resume() {
@@ -166,6 +169,9 @@ public class Resume {
             System.out.println(resumeReturn);
 
     }
+
+
+
 //code to display the resume (hope it works!)
         public String getDisplayResume(String input){
 
@@ -188,14 +194,20 @@ public class Resume {
                     + getCompany() + ", " + getStartDate() + " - " + getEndDate() + "\n"
                     + "       " + getDescription() + "\n"
                     + "SKILLS" + "\n"
-                + s.getSkillName() + ", " + s.getSkillProficiency() + "\n";
-                /*+ s.getSkillName() + ", " + s.getSkillProficiency() + "\n"
-                + s.getSkillName() + ", " + s.getSkillProficiency() + "\n"*/
+
+                       + getSkills().get(0).getSkillName()+ " , "
+                        + getSkills().get(0).getSkillProficiency();
+            }
+
+
+
 
 
 
 
     }
-    }
+
+
+
 
 
