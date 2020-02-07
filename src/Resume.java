@@ -13,17 +13,19 @@ public class Resume {
     private String endDate;
     private String description;
 
+   public ArrayList<String> skills = new ArrayList<>();
+
     //default constructor
     public Resume() {
-//overloaded constructor
+
     }
-    ArrayList<Skills>skills;
+
 
     /*public void addSkills(Skills skill){
         this.skills=skills;
     }
     */
-
+//overloaded constructor
     /*public Resume(String name, String emailAddress, String degreeType, String universityName, String major, int gradYear, String company,
                   String jobTitle, String startDate, String endDate, String description, String skillName, String skillProficiency) {
         this.name = name;
