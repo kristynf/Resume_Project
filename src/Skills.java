@@ -4,7 +4,9 @@ public class Skills {
     private String skillName;
     private String skillProficiency;
 
+public Skills(){
 
+}
 
 
 

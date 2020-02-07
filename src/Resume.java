@@ -15,6 +15,14 @@ public class Resume {
 
    public ArrayList<String> skills = new ArrayList<>();
 
+    public ArrayList<String> getSkills() {
+        return skills;
+    }
+
+    public void setSkills(ArrayList<String> skills) {
+        this.skills = skills;
+    }
+
     //default constructor
     public Resume() {
 

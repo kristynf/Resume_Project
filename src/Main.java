@@ -6,6 +6,9 @@ public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         Resume b = new Resume();
+        Skills s = new Skills();
+        Skills s2 = new Skills();
+        Skills s3 = new Skills();
         ArrayList<Skills>skills;
 
         b.welcome();
@@ -36,9 +39,9 @@ public class Main {
         for (int i = 0; i < 3; i++) {
             if (i < 3) {
                 System.out.println("Enter your skill: ");
-                skills
+                s.setSkillName(sc.nextLine());
             System.out.println("Enter your proficiency at your skill: ");
-                b.setSkillProficiency(sc.nextLine());
+                s.setSkillProficiency(sc.nextLine());
 
             } else {
                 break;
