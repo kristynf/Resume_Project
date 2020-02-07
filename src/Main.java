@@ -40,7 +40,7 @@ public class Main {
             if (i < 3) {
                 System.out.println("Enter your skill: ");
                 s.setSkillName(sc.nextLine());
-            System.out.println("Enter your proficiency at your skill: ");
+                System.out.println("Enter your proficiency at your skill: ");
                 s.setSkillProficiency(sc.nextLine());
 
             } else {
@@ -52,6 +52,8 @@ public class Main {
 
         System.out.println("Please enter your name to retrieve your spiffy resume: ");
              String input = sc.nextLine();
+
+
 
 
 

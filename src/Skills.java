@@ -25,5 +25,6 @@ public Skills(){
     public void setSkillProficiency(String skillProficiency) {
         this.skillProficiency = skillProficiency;
     }
+
 }
 

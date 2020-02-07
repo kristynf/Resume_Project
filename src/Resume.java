@@ -15,6 +15,7 @@ public class Resume {
 
    public ArrayList<String> skills = new ArrayList<>();
 
+
     public ArrayList<String> getSkills() {
         return skills;
     }
@@ -144,8 +145,27 @@ public class Resume {
         System.out.println("-------Welcome to Kristyn's Resume Generator-------");
         System.out.println("Enter your information as prompted and a spiffy new resume will be generated");
     }
+
+    public void resumeReturn(String name) {
+        String resumeReturn = "";
+
+
+            if (name.equals(name)) {
+            resumeReturn = getDisplayResume(name);
+
+           //break statement necessary or it will just go right to else
+                 }
+
+            else {
+            resumeReturn = "No book found";}
+
+            System.out.println(resumeReturn);
+
+    }
 //code to display the resume (hope it works!)
         public String getDisplayResume(String name){
+
+
             return "++--++--++--++--++--++--++--++--++--++--++--++--++--++--++--++"
                     + getName() + "\n"
                     + getEmailAddress() + "\n " +
